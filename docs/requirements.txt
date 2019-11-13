@@ -10,5 +10,4 @@ sphinxcontrib-apidoc
 pytest
 sphinx
 numpy
-xtensor-python
 pybind11
