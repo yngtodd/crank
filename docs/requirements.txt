@@ -8,10 +8,7 @@ cmake >=3.1
 sphinx_rtd_theme
 sphinxcontrib-apidoc 
 pytest
-xtl
-xtensor
 sphinx
-doxygen
 breathe
 python >=3.6
 numpy
