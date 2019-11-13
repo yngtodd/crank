@@ -9,12 +9,6 @@ crank
 .. image:: https://img.shields.io/travis/yngtodd/crank.svg
         :target: https://travis-ci.org/yngtodd/crank
 
-.. image:: https://travis-ci.org/yngtodd/crank.svg?branch=master
-    :target: https://travis-ci.org/yngtodd/crank
-
-.. image:: https://dev.azure.com/yngtodd/crank/_apis/build/status/yngtodd.crank?branchName=master
-    :target: https://dev.azure.com/yngtodd/crank/_build/latest?definitionId=1&branchName=master
-
 
 Features
 --------
