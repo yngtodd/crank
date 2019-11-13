@@ -7,7 +7,6 @@ make
 cmake >=3.1
 sphinx_rtd_theme
 sphinxcontrib-apidoc 
-doxygen
 pytest
 xtl
 xtensor
