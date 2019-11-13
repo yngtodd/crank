@@ -1,0 +1,8 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+libdir=${prefix}/@CMAKE_INSTALL_LIBDIR@
+includedir=${prefix}/include
+
+Name: crank
+Description: Crank is a cuDNN benchmark with Python bindings.
+Version: @crank_VERSION@
+Cflags: -I${includedir}

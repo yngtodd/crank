@@ -1,0 +1,52 @@
+package:
+  name: crank
+  version: 0.1.0
+
+source:
+  path: ../
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - cmake>=3.1
+    - conda-forge::xtl
+    - conda-forge::xtensor
+    - python>=3.6
+    - numpy>=1.16
+    - conda-forge::pybind11
+    - conda-forge::xtensor-python
+    
+  run:
+    - numpy>=1.16
+    - python>=3.6
+    
+test:
+  requires:
+    - pytest
+  imports:
+    - crank
+  
+  commands:
+    - test -d ${PREFIX}/include/crank           # [unix]
+    - test -f ${PREFIX}/include/crank/crank.hpp # [unix]
+    - if exist %LIBRARY_PREFIX%\include\crank\crank.hpp (exit 0) else (exit 1)  # [win]
+    # - make cpp-test
+    # -  make python-test
+
+about:
+  home:  https://github.com/yngtodd/crank
+  
+  license: BSD 3-Clause
+  license_family: BSD
+  
+  summary: 'Crank is a cuDNN benchmark with Python bindings.'
+  description: 'Crank is a cuDNN benchmark with Python bindings.'
+  documentation_url: https://readthedocs.org/projects/crank/
+  dev_url: https://github.com/yngtodd/crank
+
+extra:
+  recipe-maintainers:
+    - Todd Young
+
